@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add contact</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <section class="contact">
+    <div class="container-xl container-fluid">
+
+      <h1 class="contact__heading text-white text-center py-5 mt-4 mb-5 bg-primary rounded-pill">
+        Add Contact
+      </h1>
+
+      <div class="contact__main row justify-content-around">
+
+        <form class="form col-11 col-sm-10 col-md-8 col-lg-5 p-4 pb-5 p-sm-5 mb-4 mb-lg-0 bg-light" action="https://echo.htmlacademy.ru" method="POST" id="form">
+
+          <label class="form__label fw-bold text-primary fs-5 mb-3" for="name">Name
+            <input class="form__input form-control" id="name" type="text" minlength="3" autocomplete="off">
+          </label>
+
+          <label class="form__label fw-bold text-primary fs-5 mb-3" for="last-name">Last name
+            <input class="form__input form-control" id="last-name" type="text" minlength="5" autocomplete="off">
+          </label>
+
+          <label class="form__label fw-bold text-primary fs-5 mb-3" for="relationship">Relationship
+            <select class="form__select form-select d-block w-100" name="relationship" id="relationship"></select>
+          </label>
+
+          <label class="form__label fw-bold text-primary fs-5 mb-3" for="phone">Phone number
+            <input class="form__input form-control" id="phone" type="tel" minlength="9" maxlength="13" autocomplete="off">
+          </label>
+          
+          <button class="form__btn btn btn-primary d-block fw-bold px-5">Add contact</button>
+
+        </form>
+
+        <output class="result col-11 col-sm-10 col-md-8 col-lg-5 p-4 bg-light overflow-auto">
+
+          <ul class="result__list list-unstyled"></ul>
+
+        </output>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

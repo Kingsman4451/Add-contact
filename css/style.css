@@ -1,0 +1,26 @@
+.form, .result {
+  border-radius: 20px;
+  box-shadow: -5px 7px 13px 0px rgba(34, 60, 80, 0.2);
+}
+.result {
+  height: 465px
+}
+.form__label {
+  width: 100%;
+}
+.result__list-item {
+  background-color: rgba(13, 109, 253, 0.3);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.result__item-text {
+  color: rgb(13, 109, 253);
+  font-weight: bold;
+}
+.result__item-text span {
+  color:#198754;
+  font-weight: normal;
+}
+.red-border {
+  border-color: red !important;
+}
