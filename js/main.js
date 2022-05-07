@@ -44,10 +44,10 @@ elForm.addEventListener("submit", function (e){
     elResultList.innerHTML = "";
     contacts.push(
       {
-        name: elInpName.value,
-        lastName: elInpLastName.value,
+        name: elInpName.value.trim(),
+        lastName: elInpLastName.value.trim(),
         relation: elSelectRel.value,
-        phone: elInpPhone.value,
+        phone: elInpPhone.value.trim(),
       }
     )
     for (let i = 0; i < contacts.length; i++) {
